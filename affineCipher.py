@@ -9,8 +9,6 @@ def affine_cipher_encrypt(plaintext, a, b):
         else:
             ciphertext += char
     return ciphertext
-
-
 def affine_cipher_decrypt(ciphertext, a, b):
     plaintext = ""
     a_inv = 0
@@ -28,14 +26,10 @@ def affine_cipher_decrypt(ciphertext, a, b):
             plaintext += char
     return plaintext
 
-
-# Sample input and output
 plaintext = "Hello, World!"
 a = 5
 b = 8
-
 ciphertext = affine_cipher_encrypt(plaintext, a, b)
 print("Ciphertext:", ciphertext)
-
 decrypted_text = affine_cipher_decrypt(ciphertext, a, b)
 print("Decrypted text:", decrypted_text)
